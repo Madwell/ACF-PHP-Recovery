@@ -28,7 +28,6 @@ function acf_php_recovery_page() {
 
     // Now we can import the groups
     foreach( $acf_local->groups as $key => $group ) {
-      $group['title'] = $group['title'] . ' (Recovered)';
 
       // Only import those that were selected
       if( in_array($key, $import_fieldsets) ) {
